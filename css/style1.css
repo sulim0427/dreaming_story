@@ -1,0 +1,123 @@
+@charset "UTF-8";/*꼭 넣기*/
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0; padding: 0;}
+ul,ol{list-style: none;}
+body{
+    font-family: "GmarketSansMedium";
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff1e0;
+    background-color: #00122b;
+    height: 100%;
+}
+a{color: #fff1e0; text-decoration: none;}
+/*top*/
+#top{
+    width: auto;
+    margin: 0 auto;
+    height: 100px;
+}
+#top ul{
+    margin-top: 2%;
+    width: 30%;
+    float: right;
+}
+
+#top ul li a:hover{
+    color: violet;
+}
+
+.logo{
+    float: left;
+    padding: 14px;
+}
+.logo img{/*왼쪽*/
+    width: 300px;
+    padding: 1.2%;
+}
+.character_btn{
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.character_btn li{
+    margin-right: 20%;
+    margin-bottom: 20px;
+}
+/*banner*/
+#banner_wrap{
+    height: 73vh;
+    background: url(../img/20220304\ 1.png) no-repeat right;
+    margin-bottom: 80px;
+}
+.banner{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    position: relative;
+}
+.banner_text{
+    width: 56.6vb;
+    /* height: 86%; */
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 5.4% 1.2%;
+    padding: 0px 20px 20px 20px;
+    /* border: 1px solid #fff1e0; */
+    box-sizing: border-box;
+    position: absolute;
+}
+.banner_text h1{
+    font-size: 70px;
+    padding-top: 14%;
+    padding-bottom: 8%;
+    letter-spacing: 0.5rem;
+}
+.banner_text h2{
+    font-size: 33px;
+    padding-bottom: 5%;
+    letter-spacing: 0.5rem;
+}
+.banner p{
+    font-size: 1.2rem;
+    letter-spacing: -0.02rem;
+    line-height: 1.6rem;
+    word-spacing: 0.04rem;
+}
+.banner_btn_wrap{
+    display: flex;
+    position: relative;
+}
+.banner_btn{
+    width: 1300px;
+    height:100px;
+    /* background-color: aqua; */
+    margin-right: 1.2%;
+    position: absolute;
+    right: 0;
+    bottom: 27%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end;
+    position: fixed;
+}
+.btn1, .btn2, .btn3{
+    width: 20%;
+    height:70%;
+    border: 2px solid #fff1e0;
+}
+.btn{
+    display : flex;
+    justify-content : center;
+    font-size: 14px;
+    align-items : center;
+    background-color: rgba(37, 41, 56, 0.8);
+}
+.btn a{
+    text-decoration: none;
+    color: #fff1e0;
+}

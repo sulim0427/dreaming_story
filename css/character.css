@@ -18,42 +18,43 @@ body{
     color: #fff1e0;
     height: 100%;
     box-sizing: border-box;
+    background-color: #0d111e;
 }
-.bg-video {
+.bg {
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    opacity: 0.92;
+    display: inline-block;
     overflow: hidden;
-  }
-  
-  .bg-video__content {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; 
-    background-size: cover; 
-    /* 와 비슷함. (HTML 요소 or 비디오와 작동) */
-    
+    margin: 0px auto;
+    z-index: -99;
   }
 /*top*/
 #top{
-    width: auto;
+    width: 94%;
+    height: 70px;
     margin: 0 auto;
+    /* background-color: aqua; */
+    position: relative;
+    /* margin-bottom: 40px; */
 }
-.logo img{/*왼쪽*/
-    display: inline-block;
-    width: 300px;
-    padding: 1.2%;
+#top .logo{
+    width: 240px;
+    height: 50px;
+    float: left;
+    margin: 14px auto;
 }
 /**/
 .section_wrap{
     margin: 1% auto;
-    width: 90%;
-    height: auto;
+    height: 20%;
     /* background-color: #fff5f5; */
+}
+.section{
+    height: 720px;
+    margin-bottom: 40px;
+}
+.character_box{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -66,15 +67,19 @@ body{
     background-color: aqua; */
 }
 .character_text{
-    width: 30%;
-    overflow: hidden;
+    display: inline-block;
+    width: 530px;
+    height: 640px;
     /* background-color: rgba(83, 83, 92, 0.2); */
     border-radius: 30px;
     padding: 20px;
-    word-break: break-all
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .character_text p{
     font-size: 18px;
+    word-break: break-all;
 }
 .character_text p:nth-child(3){
     font-size: 20px;
@@ -82,4 +87,23 @@ body{
 .character_text h1{
     font-size: 36px;
     padding-top: 20px;
+}
+/*footer*/
+#footer_wrap{
+    height: 150px;
+    background-color: #0d111e;
+}
+.footer{
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: flex-end
+}
+video{
+    position: fixed; right: 0; bottom: 0;
+    min-width: 100%; min-height: 100%;
+    width: auto; height: auto; z-index: -100;
+    background-size: cover;
 }
