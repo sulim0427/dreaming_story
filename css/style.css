@@ -127,9 +127,14 @@ a{color: #fff1e0; text-decoration: none;}
     /* background-color: rgb(226, 51, 176); */
     display: flex;
 }
+.character_box ul{
+    text-align: center;
+    display: flex;
+}
 .character_box li{
-    width: 10%;
-    height: 80%;
+    display: inline-block;
+    width: 130px;
+    height: 550px;
     margin: 0 0.4%;
     margin-top: 6%;
     /* background-color: aquamarine; */
@@ -154,7 +159,6 @@ a{color: #fff1e0; text-decoration: none;}
 }
 .character_box li:nth-child(1) a{ /*아리카*/
     background-image: url(../img/character_pick_1.png);
-
     opacity: 0.15;
     transition: all 2s;
 }
@@ -165,8 +169,17 @@ a{color: #fff1e0; text-decoration: none;}
     transform: translateY(-50px);
     transition: 1s ease;
 }
-.character_box li:nth-child(2){ /*네리*/
-    background-color: rgba(132, 132, 132, 0.2);
+.character_box li:nth-child(2) a{ /*네리*/
+    background-image: url(../img/character_pick_2.png);
+    opacity: 0.15;
+    transition: all 2s;
+}
+.character_box li:nth-child(2):hover a{
+    opacity: 1;
+    background-blend-mode: normal;
+    background-image: url(../img/character_pick_2.png);
+    transform: translateY(-50px);
+    transition: 1s ease;
 }
 .character_box li:nth-child(3){ /*이화*/
     background-color: rgba(132, 132, 132, 0.2);
