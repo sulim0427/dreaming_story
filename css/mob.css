@@ -153,13 +153,13 @@ a{color: #fff1e0; text-decoration: none;}
     }
     .post-slider .next{
         position:absolute;
-        top:20%;
+        top:40%;
         right:-4%;
         cursor: pointer;
       }
       .post-slider .prev{
         position:absolute;
-        top:20%;
+        top:40%;
         left:2.6%;
         cursor: pointer;
       }
