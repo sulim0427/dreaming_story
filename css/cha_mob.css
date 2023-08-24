@@ -1,0 +1,128 @@
+@charset "UTF-8";/*꼭 넣기*/
+@font-face {
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*{margin: 0; padding: 0;
+    -ms-overflow-style: none;
+  }
+ul,ol{list-style: none;}
+body{
+    font-family: "GmarketSansMedium";
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff1e0;
+    background-color: #00122b;
+    height: 100%;
+}
+a{color: #fff1e0; text-decoration: none;}
+@media screen and (max-width: 3680) {
+    /*top*/
+#top{
+    width: 94%;
+    height: 70px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    position: relative;
+    /* margin-bottom: 40px; */
+}
+#top .logo{
+    width: 240px;
+    height: 50px;
+    float: left;
+    margin: 14px auto;
+}
+/*메뉴는 생각중*/
+/*footer*/
+#footer_wrap{
+    height: 150px;
+    background-color: #0d111e;
+}
+.footer{
+    width: 94%;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: tomato; */
+    display: flex;
+    align-items: flex-end;
+}
+/*post slider*/
+.post-slider{
+    width:70%;
+    margin:0px auto;
+    position:relative;
+  }
+  .post-slider .silder-title{
+    text-align:center;
+    margin:30px auto;
+  }
+  .post-slider .next{
+    position:absolute;
+    top:40%;
+    right:0px;
+    cursor: pointer;
+
+  }
+  .post-slider .prev{
+    position:absolute;
+    top:40%;
+    left:0;
+    cursor: pointer;
+  }
+  .post-slider .post-wrapper{
+  
+    width:84%;
+    height:450px;
+    margin:0px auto;
+    overflow: hidden;
+    padding:10px 0px 10px 0px;
+  }
+  .post-slider .post-wrapper .post{
+    height:30%;
+    overflow: hidden;
+    margin:0px 10px;
+    display:inline-block;
+    border-radius: 0px;
+  }
+  .post-slider .post-wrapper .post .post-info{
+    font-size:15px;
+    padding-left:10px;
+  }
+  .post-slider .post-wrapper .post .slider-image{
+    width:100%;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+    #top .logo{
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+    .section{
+        height: auto;
+    }
+    .section .character_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .character_img{
+        width: 80%;
+    }
+    .character_img img{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .character_text{
+        display: inline-block;
+        width: 80%;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 480px){
+
+}

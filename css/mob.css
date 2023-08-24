@@ -1,12 +1,13 @@
 @charset "UTF-8";/*꼭 넣기*/
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-family: 'HakgyoansimWoojuR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/HakgyoansimWoojuR.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 *{margin: 0; padding: 0;
-    -ms-overflow-style: none;}
+    -ms-overflow-style: none;
+  }
 ul,ol{list-style: none;}
 body{
     font-family: "GmarketSansMedium";
@@ -24,7 +25,7 @@ a{color: #fff1e0; text-decoration: none;}
 }
 @media screen and (max-width:1400px) {
     .character_box{
-        display: none;
+      display: none;
     }
     .section2 .page-wrapper{
         display: contents;
@@ -163,5 +164,4 @@ a{color: #fff1e0; text-decoration: none;}
         left:2.6%;
         cursor: pointer;
       }
-}
 }
