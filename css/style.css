@@ -218,8 +218,17 @@ a{color: #fff1e0; text-decoration: none;}
     transform: translateY(-50px);
     transition: 1s ease;
 }
-.character_box li:nth-child(7){ /*천솔*/
-    background-color: rgba(132, 132, 132, 0.2);
+.character_box li:nth-child(7) a{
+    background-image: url(../img/character_pick_7.png);
+    opacity: 0.15;
+    transition: all 2s;
+}
+.character_box li:nth-child(7):hover a{
+    opacity: 1;
+    background-blend-mode: normal;
+    background-image: url(../img/character_pick_7.png);
+    transform: translateY(-50px);
+    transition: 1s ease;
 }
 .character_box li:nth-child(8) a{ /*모카*/
     background-image: url(../img/character_pick_8.png);
